@@ -147,10 +147,10 @@ class _GoogleMapState extends State<GoogleMapPage> with TickerProviderStateMixin
             Consumer<ClubModule>(
               builder: (context, clubModule, _){
                 return GoogleMap(
-                mapType: MapType.normal,
-                onMapCreated: _onMapCreated,
-                initialCameraPosition: CameraPosition(target: _mapCenter, zoom: 11),
-                // markers: clubModule.markers,
+                  mapType: MapType.normal,
+                  onMapCreated: _onMapCreated,
+                  initialCameraPosition: CameraPosition(target: _mapCenter, zoom: 11),
+                  // markers: clubModule.markers,
                 );
               },
             ),
@@ -166,16 +166,16 @@ class _GoogleMapState extends State<GoogleMapPage> with TickerProviderStateMixin
             //blur
             offsetSearch != 0
                 ? BackdropFilter(
-                    filter: ImageFilter.blur(sigmaX: 10 * currentSearchPercent, sigmaY: 10 * currentSearchPercent),
-                    child: Container(
-                      color: Colors.white.withOpacity(0.1 * currentSearchPercent),
-                      width: screenWidth,
-                      height: screenHeight,
-                    ),
-                  )
+              filter: ImageFilter.blur(sigmaX: 10 * currentSearchPercent, sigmaY: 10 * currentSearchPercent),
+              child: Container(
+                color: Colors.white.withOpacity(0.1 * currentSearchPercent),
+                width: screenWidth,
+                height: screenHeight,
+              ),
+            )
                 : const Padding(
-                    padding: const EdgeInsets.all(0),
-                  ),
+              padding: const EdgeInsets.all(0),
+            ),
             //explore content
             ExploreContentWidget(
               currentExplorePercent: currentExplorePercent,
@@ -187,23 +187,23 @@ class _GoogleMapState extends State<GoogleMapPage> with TickerProviderStateMixin
             //search menu background
             offsetSearch != 0
                 ? Positioned(
-                    bottom: realH(88),
-                    left: realW((standardWidth - 320) / 2),
-                    width: realW(320),
-                    height: realH(135 * currentSearchPercent),
-                    child: Opacity(
-                      opacity: currentSearchPercent,
-                      child: DecoratedBox(
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(realW(33)), topRight: Radius.circular(realW(33)))),
-                      ),
-                    ),
-                  )
+              bottom: realH(88),
+              left: realW((standardWidth - 320) / 2),
+              width: realW(320),
+              height: realH(135 * currentSearchPercent),
+              child: Opacity(
+                opacity: currentSearchPercent,
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(realW(33)), topRight: Radius.circular(realW(33)))),
+                ),
+              ),
+            )
                 : const Padding(
-                    padding: const EdgeInsets.all(0),
-                  ),
+              padding: const EdgeInsets.all(0),
+            ),
             //search menu
             SearchMenuWidget(
               currentSearchPercent: currentSearchPercent,

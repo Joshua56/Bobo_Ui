@@ -34,7 +34,73 @@ class MyApp extends StatelessWidget {
           },
         ),
       ),
+      routes: <String, WidgetBuilder> {
+        '/club': (BuildContext context) => ClubsPage(),
+        '/event': (BuildContext context) => EventsPage(),
+        '/crew': (BuildContext context) => CrewPage(),
+        '/taxi': (BuildContext context) => TaxiPage(),
+        '/payment': (BuildContext context) => PaymentPage(),
+        '/reservation': (BuildContext context) => ReservationPage(),
+        '/settings': (BuildContext context) => SettingsPage(),
+      },
 
+    );
+  }
+}
+
+class ClubsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(child: Text("ClubsPage"),),
+    );
+  }
+}
+class EventsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(child: Text("events"),),
+    );
+  }
+}
+class CrewPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(child: Text("crew"),),
+    );
+  }
+}
+class TaxiPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(child: Text("taxi"),),
+    );
+  }
+}
+class PaymentPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(child: Text("payment"),),
+    );
+  }
+}
+class ReservationPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(child: Text("reservation"),),
+    );
+  }
+}
+class SettingsPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Center(child: Text("settings"),),
     );
   }
 }
