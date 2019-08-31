@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "875047425156",
+    "firebase_url": "https://maptest-250701.firebaseio.com",
+    "project_id": "maptest-250701",
+    "storage_bucket": "maptest-250701.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875047425156:android:ff90953434e29b14",
+        "android_client_info": {
+          "package_name": "com.example.club"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875047425156-vm7gh9gbfrcg52hl63porgjdforgtn22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSwZX7oX-Zgp_iiH6lU3QH4buZVwweItM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875047425156-vm7gh9gbfrcg52hl63porgjdforgtn22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
